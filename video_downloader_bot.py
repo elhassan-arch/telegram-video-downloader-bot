@@ -6,7 +6,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime, timedelta
 import hashlib
 
-API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+API_TOKEN = '7990538594:AAHfpWypQ-CEzS4jmAx0-SNU8ZPfE52PRUg'
 STRIPE_SECRET_KEY = 'sk_test_51RNcv3PsEYwohgvB0EMu3swK5WmFkVDeaCPGfLR961ebd5z6An6Xm4hcgLtHMbQwl5HgvSIZ6qSaz8Z9IHKtTDBh00zIFiidlv'
 DONATION_LINK = 'https://buy.stripe.com/test_fZu28t8RmbgiaZe8xueQM00'
 
