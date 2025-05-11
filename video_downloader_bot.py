@@ -36,7 +36,7 @@ async def start_command(message: types.Message):
     keyboard = InlineKeyboardMarkup()
     keyboard.add(InlineKeyboardButton("Donate", url=DONATION_LINK),
                  InlineKeyboardButton("Subscribe ($2/month)", callback_data="subscribe"))
-    await message.reply(f"Welcome! Send a video link to download.\n\nRefer for 1-day premium: https://t.me/YourBot?start={ref_id}", reply_markup=keyboard)
+    await message.reply(f"Welcome to InstaTikPlusBot! Send a video link to download.\n\nRefer for 1-day premium: https://t.me/InstaTikPlusBot?start={ref_id}", reply_markup=keyboard)
 
 @dp.callback_query_handler(lambda call: call.data == "subscribe")
 async def subscribe_handler(call: types.CallbackQuery):
@@ -89,6 +89,10 @@ def quality_buttons():
     qualities = ["360p", "720p", "1080p"]
     for q in qualities:
         keyboard.add(InlineKeyboardButton(q, callback_data=q))
+    return keyboard
+
+if __name__ == '__main__':
+    executor.start_polling(dp, skip_updates=True)
     return keyboard
 
 if __name__ == '__main__':
