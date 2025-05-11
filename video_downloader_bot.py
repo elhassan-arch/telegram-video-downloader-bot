@@ -1,4 +1,3 @@
-
 import logging
 import requests
 import stripe
@@ -8,8 +7,8 @@ from datetime import datetime, timedelta
 import hashlib
 
 API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-STRIPE_SECRET_KEY = 'YOUR_STRIPE_SECRET_KEY'
-DONATION_LINK = 'YOUR_STRIPE_PAYMENT_LINK'
+STRIPE_SECRET_KEY = 'sk_test_51RNcv3PsEYwohgvB0EMu3swK5WmFkVDeaCPGfLR961ebd5z6An6Xm4hcgLtHMbQwl5HgvSIZ6qSaz8Z9IHKtTDBh00zIFiidlv'
+DONATION_LINK = 'https://buy.stripe.com/test_fZu28t8RmbgiaZe8xueQM00'
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
